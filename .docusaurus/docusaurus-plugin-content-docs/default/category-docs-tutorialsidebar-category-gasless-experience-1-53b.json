@@ -1,0 +1,15 @@
+{
+  "title": "Gasless Experience",
+  "slug": "/category/gasless-experience-1",
+  "permalink": "/docs/category/gasless-experience-1",
+  "navigation": {
+    "previous": {
+      "title": "Translate your site",
+      "permalink": "/docs/gassless-experience/translate-your-site"
+    },
+    "next": {
+      "title": "Manage Docs Versions",
+      "permalink": "/docs/gassless-experience copy/manage-docs-versions"
+    }
+  }
+}

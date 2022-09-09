@@ -1,0 +1,16 @@
+{
+  "title": "Bundle Transactionas",
+  "description": "5 minutes to learn the most important Docusaurus concepts.",
+  "slug": "/category/bundle-transactionas",
+  "permalink": "/docs/category/bundle-transactionas",
+  "navigation": {
+    "previous": {
+      "title": "Introduction",
+      "permalink": "/docs/intro"
+    },
+    "next": {
+      "title": "Create a Page",
+      "permalink": "/docs/tutorial-basics/create-a-page"
+    }
+  }
+}

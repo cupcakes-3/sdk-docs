@@ -1,0 +1,27 @@
+{
+  "unversionedId": "wallets",
+  "id": "wallets",
+  "title": "Wallets",
+  "description": "Smart Contract Wallets (SCW) allows DAPP developer to bundle multiple transaction & pay gas fees for their users. You must create a SCW using our SDK for every user. The final bundled call will initiate from user's SCW. If you want to transfer the final assets to the user's current EOA, then you MUST send the transaction to transfer the assets from SCW to EOA separately.",
+  "source": "@site/docs/wallets.md",
+  "sourceDirName": ".",
+  "slug": "/wallets",
+  "permalink": "/docs/wallets",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/wallets.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Bundle Transactions",
+    "permalink": "/docs/bundle-transactions"
+  }
+}

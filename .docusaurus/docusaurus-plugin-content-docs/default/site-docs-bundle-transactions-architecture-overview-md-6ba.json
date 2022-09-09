@@ -1,0 +1,27 @@
+{
+  "unversionedId": "bundle-transactions/architecture/overview",
+  "id": "bundle-transactions/architecture/overview",
+  "title": "Overview",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/bundle-transactions/architecture/overview.md",
+  "sourceDirName": "bundle-transactions/architecture",
+  "slug": "/bundle-transactions/architecture/overview",
+  "permalink": "/docs/bundle-transactions/architecture/overview",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bundle-transactions/architecture/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Architecture",
+    "permalink": "/docs/category/architecture"
+  },
+  "next": {
+    "title": "Gasless Experience",
+    "permalink": "/docs/category/gasless-experience"
+  }
+}

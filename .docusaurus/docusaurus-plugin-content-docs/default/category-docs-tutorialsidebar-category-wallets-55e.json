@@ -1,0 +1,16 @@
+{
+  "title": "Wallets",
+  "description": "Smart Contract Wallets (SCW) enables DAPP developers to bundle transaction & also pay gas for their users.",
+  "slug": "/category/wallets",
+  "permalink": "/docs/category/wallets",
+  "navigation": {
+    "previous": {
+      "title": "Introduction",
+      "permalink": "/docs/intro"
+    },
+    "next": {
+      "title": "Overview",
+      "permalink": "/docs/wallets/overview"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Bundle Transactions",
+  "description": "Bundle multiple transactions into a single transaction using Smart Contract Wallets.",
+  "slug": "/category/bundle-transactions",
+  "permalink": "/docs/category/bundle-transactions",
+  "navigation": {
+    "previous": {
+      "title": "Wallets",
+      "permalink": "/docs/wallets"
+    },
+    "next": {
+      "title": "Introduction",
+      "permalink": "/docs/bundle-transactions/introduction"
+    }
+  }
+}

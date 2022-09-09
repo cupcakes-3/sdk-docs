@@ -1,0 +1,15 @@
+{
+  "title": "Gasless Experience",
+  "slug": "/category/gasless-experience",
+  "permalink": "/docs/category/gasless-experience",
+  "navigation": {
+    "previous": {
+      "title": "Bundle Transactions",
+      "permalink": "/docs/bundle-transactions"
+    },
+    "next": {
+      "title": "Manage Docs Versions",
+      "permalink": "/docs/gassless-experience/manage-docs-versions"
+    }
+  }
+}

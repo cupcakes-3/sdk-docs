@@ -1,0 +1,16 @@
+{
+  "title": "Smart Contract Wallets",
+  "description": ".",
+  "slug": "/category/smart-contract-wallets",
+  "permalink": "/docs/category/smart-contract-wallets",
+  "navigation": {
+    "previous": {
+      "title": "Introduction",
+      "permalink": "/docs/intro"
+    },
+    "next": {
+      "title": "Overview",
+      "permalink": "/docs/wallets/overview"
+    }
+  }
+}
