@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Smart Contract Wallets (SCW) allows DAPP developer to bundle multiple transaction & pay gas fees for their users. You must create a SCW using our SDK for every user. The final bundled call will initiate from user's SCW. If you want to transfer the final assets to the user's current EOA, then you MUST send the transaction to transfer the assets from SCW to EOA separately.
 
-To know how to create a SCW for a user see [Dapp specific wallets](/docs/wallets/overview#dapp-specific-wallets).
+To know how to create a SCW for a user see [Dapp specific wallets](./wallets.md#dapp-specific-wallets).
 
 <!-- Now there are two ways to solve for this problem, first that you use our [User Specific Wallet](/docs/wallets/overview#user-specific-wallet), second that you create a [Dapp Specific Wallet](/docs/wallets/overview#dapp-specific-wallets) for every one of your users. -->
 
@@ -40,7 +40,7 @@ Once the SCW has been initiated, you can use it as a normal signer with ethers/w
 
 :::danger
 
-The transactions sent using ethers/web3/etc won't be by default bundled or sponsored. Use `sendTransactions` instead, see [Bundling Transactions](/docs/category/bundle-transactions/).
+The transactions sent using ethers/web3/etc won't be by default bundled or sponsored. Use `sendTransactions` instead, see [Bundling Transactions](./bundle-transactions.md).
 
 :::
 

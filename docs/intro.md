@@ -17,7 +17,7 @@ in the meantime, feel free the to read the docs and give us your feedback on [Te
 
 A guide for adding a Cupcakes SDK to your application & start bundling transactions. There are two parts of the documentation, [**bundling transaction**](./bundle-transactions.md) and [**sponsoring gas**](./gassless-experience/).
 
-For both of them you would need to install our SDK. For sponsoring gas, you will have to first create a paymaster contract. To know more about how to create a paymaster contract, read [here](/docs/gas).
+For both of them you would need to install our SDK. For sponsoring gas, you will have to first create a paymaster contract. To know more about how to create a paymaster contract, read [here](./gassless-experience.md).
 
 ### What you'll need
 
