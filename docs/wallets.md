@@ -22,7 +22,7 @@ Create a Smart Contract Wallet for a user. You MUST pass a signer while creating
 
 ```typescript
 import { Signer } from 'ethers';
-import { SCW } from '@...';
+import { SCW } from '@cupcakes...';
 
 /**
  * You can get signer using either the private key
