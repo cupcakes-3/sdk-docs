@@ -40,7 +40,7 @@ Once the SCW has been initiated, you can use it as a normal signer with ethers/w
 
 :::danger
 
-The transactions sent using ethers/web3/etc won't be by default bundled or sponsored. Use `sendTransactions` instead, see [Bundling Transactions](./bundle-transactions.md).
+The transactions sent using ethers/web3/etc won't be by default bundled or sponsored. Use `sendTransactions` instead to bundle transactions, see [Bundle Transactions](./bundle-transactions.md). If you want to sponer, make sure you connect a `paymaster`, see [Gassless Experience](./gassless-experience.md)
 
 :::
 

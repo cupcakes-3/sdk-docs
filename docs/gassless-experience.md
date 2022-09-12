@@ -31,7 +31,7 @@ Head to our website [https://comingsoon@cupcakes](https://bit.ly/gas_less) and f
 
 ### Stake & deposit funds
 
-Once you have created your paymaster, you will have to stake your funds. The Minimum stake as of now is `x MATIC` with a lockin of `7 days`. The stake is to make sure no fraudulant activity can be performed by the paymaster. The staked funds will be deductded if any such fraudulant activity is found.
+Once you have created your paymaster, you will have to stake your funds. The Minimum stake as of now is `x MATIC` with a lock-in of `7 days`. The stake is to make sure no fraudulant activity can be performed by the paymaster. The staked funds will be deductded if any such fraudulant activity is found.
 
 :::caution
 You must have enough deposit left to cover for 100% of the gas fees even if you only want to sponsor a portion of it. If desposit is not enough, the transaction will be reverted.
@@ -51,13 +51,9 @@ The requst will have the following body:
   "timestamp": 1662805504483,
   "userOperation": {
     "sender": "0xadb2...asd4", // Sender's address of the SCW
-    "initCode": "0xAxvd3r....adfsg4r", //init code, if not empty means that this wallet doesn't exist and will be deployed in this transaction along with executing the required transaction
-    "callGas": 123, // the amount of gas the main execution of transaction will take
-    "verificationGas": 123, //the constant amount of gas which is required to verify sender's ownership
-    "preVerificationGas": 123, // the constant amount of gas which is required by the bundler for processing the transaction
-    "maxFeePerGas": 123, // the maximum gas price, this depends on how busy the network is
-    "maxPriorityFeePerGas": 123, // the fee that will be used to tip the miner
     "maxGasCost": 123, // you can use this as the total of all the above gas breakup & use this to make decision of sponsoring
+    "paymasterDeposit": 123, // the amount of deposit left in your paymaster contract, you can send refill transactions using this if you want to
+    "paymasterAddress": "0x23rr...", // your paymaster contract address, you should send money to this address if paymasterDeposit is approaching zero
     "transactions": [
       // this is the array of transactions that your frontend SDK included for bundling
       {
@@ -65,7 +61,16 @@ The requst will have the following body:
         "value": 4, // value in ethers
         "data": "0xadsf..." // call data your SDK passed
       }
-    ]
+    ],
+    // The following fields are part of the UserOperation that will be used to generate signature, you can ignore these if you are using our paymaster SDK
+    "nonce": 123,
+    "initCode": "0xAxvd3r....adfsg4r", //init code, if not empty means that this wallet doesn't exist and will be deployed in this transaction along with executing the required transaction
+    "callData": "0xsdfdasf...000", // call data of the execution
+    "callGas": 123, // the amount of gas the main execution of transaction will take
+    "verificationGas": 123, //the constant amount of gas which is required to verify sender's ownership
+    "preVerificationGas": 123, // the constant amount of gas which is required by the bundler for processing the transaction
+    "maxFeePerGas": 123, // the maximum gas price, this depends on how busy the network is
+    "maxPriorityFeePerGas": 123 // the fee that will be used to tip the miner
   }
 }
 ```

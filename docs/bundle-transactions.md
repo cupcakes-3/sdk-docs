@@ -29,7 +29,7 @@ await scw.sendTransactions([
 ]);
 ```
 
-```typescript title="Calling two different contracts"
+```typescript title="Getting approval for ERC20 token & depositing together"
 await scw.sendTransactions([
   {
     to: ERC20_TOKEN_ADDR,
