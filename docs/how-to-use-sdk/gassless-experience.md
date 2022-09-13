@@ -1,25 +1,25 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Gassless Experience
 
 Cupkaes SDK will enable conditional gassless experience, which includes partial gas-sponsoring. This enables you to have complex integrations like: sponsoring of gas on ethereum upto $5 and 100% on L2/sidechain.
 
-Before you can start sponsoring gas, you must [deploy](./gassless-experience.md#deploy-a-paymaster) a paymaster contract. The paymaster _MUST_ be staked & should have enough deposit to sponsor for gas. If the deposited amount becomes lesser than the gas required then your transactions will start failing.
+Before you can start sponsoring gas, you must [deploy](#deploy-a-paymaster) a paymaster contract. The paymaster _MUST_ be staked & should have enough deposit to sponsor for gas. If the deposited amount becomes lesser than the gas required then your transactions will start failing.
 
 ---
 
 ## Paymaster
 
-Paymaster is a contract that sponsors gas fees on behalf of users. To know more about how it works, read in the [architecture section](./architecture/overview.md).
+Paymaster is a contract that sponsors gas fees on behalf of users. To know more about how it works, read in the [architecture section](../architecture/overview).
 
 To enable gas sponsoring these are the steps you must do:
 
-1. [Deploy a paymaster](./gassless-experience.md#deploy-a-paymaster)
-2. [Stake paymaster](./gassless-experience.md#stake--deposit-funds)
-3. [Register a webhook](./gassless-experience.md#register-webhook)
-4. [Integrate with frontend](./gassless-experience.md#integrate-with-frontend)
+1. [Deploy a paymaster](#deploy-a-paymaster)
+2. [Stake paymaster](#stake--deposit-funds)
+3. [Register a webhook](#register-webhook)
+4. [Integrate with frontend](#integrate-with-frontend)
 
 ### Deploy a paymaster
 
@@ -37,7 +37,7 @@ Once you have created your paymaster, you will have to stake your funds. The Min
 You must have enough deposit left to cover for 100% of the gas fees even if you only want to sponsor a portion of it. If desposit is not enough, the transaction will be reverted.
 :::
 
-Learn more about how your stake can be slashed more in detail [here](./architecture/overview.md).
+Learn more about how your stake can be slashed more in detail [here](../architecture/overview).
 
 ### Register webhook
 
@@ -81,7 +81,7 @@ You must return with a `200` code if you agree to sponsor the transaction. If yo
 
 ### Integrate with frontend
 
-You will have to connect your paymaster with the SCW you created in [Wallets section](./wallets.md#initiate-a-wallet).
+You will have to connect your paymaster with the SCW you created in [Wallets section](./wallets#initiate-a-wallet).
 
 ```typescript
 import { paymasterConnector } from '@cupcakes...';
