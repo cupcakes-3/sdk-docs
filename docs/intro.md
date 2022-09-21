@@ -43,7 +43,7 @@ import TabItem from '@theme/TabItem';
 ```
 
 ```bash
-npm install @...
+npm install @cupcakes-sdk/scw
 ```
 
 ```mdx-code-block
@@ -52,7 +52,7 @@ npm install @...
 ```
 
 ```bash
-yarn add @...
+yarn add @cupcakes-sdk/scw
 ```
 
 ```mdx-code-block

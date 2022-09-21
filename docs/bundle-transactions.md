@@ -12,25 +12,35 @@ Bundling transactions opens up a plathora of possibilities. We have listed a few
 
 ## Single chain bundling
 
-You must have initialised SDK & created a SCW. We have exposed a function in a SCW called `sendTransactions` using which you can send multiple transactions.
+You must have initialised iSDK & created a `SCWProvider`. We have exposed a function in a `SCWSigner` called `sendTransactions` using which you can send multiple transactions.
 
-```typescript title="Sending eth to two different addresses"
-await scw.sendTransactions([
+```typescript
+const scwSigner = scwProvider.getSigner();
+const greeter = new ethers.Contract(
+  GREETER_ADDR,
+  GreeterArtifact.abi,
+  scwSigner
+);
+
+const transactionData = greeter.interface.encodeFunctionData('addGreet');
+
+const tx = await scwProvider.sendTransactions([
   {
-    to: '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266',
-    value: ethers.utils.parseEther('0.1'),
-    data: '0x',
+    to: GREETER_ADDR,
+    value: ethers.utils.parseEther('0.0001'),
+    data: transactionData,
   },
   {
-    to: '0x70997970C51812dc3A010C7d01b50e0d17dc79C8',
-    value: ethers.utils.parseEther('0.1'),
-    data: '0x',
+    to: GREETER_ADDR,
+    value: ethers.utils.parseEther('0.0002'),
+    data: transactionData,
   },
 ]);
+console.log(tx);
 ```
 
 ```typescript title="Getting approval for ERC20 token & depositing together"
-await scw.sendTransactions([
+await scwProvider.sendTransactions([
   {
     to: ERC20_TOKEN_ADDR,
     value: ethers.utils.parseEther('0.1'),

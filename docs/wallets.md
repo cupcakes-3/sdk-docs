@@ -22,7 +22,7 @@ Create a Smart Contract Wallet for a user. You MUST pass a signer while creating
 
 ```typescript
 import { Signer } from 'ethers';
-import { SCW } from '@cupcakes...';
+import { SCWProvider } from '@cupcakes-sdk/scw';
 
 /**
  * You can get signer using either the private key
@@ -33,10 +33,41 @@ import { SCW } from '@cupcakes...';
 
 /* Once you have signer & provider, create user's SCW */
 
-const scw: Signer = new SCW(signer) as Signer;
+/**
+ * @param provder - any BaseProvider from ethers (JSONRpcProvider | window.ethereum | etc)
+ * @param signer - this will be the owner of the SCW that will be deployed.
+ */
+const scwProvider: SCWProvider = await SCWProvider.getSCWForOwner(
+  provider,
+  signer
+);
 ```
 
 Once the SCW has been initiated, you can use it as a normal signer with ethers/web3/etc to connect & send bundled transactions.
+
+### Executing transactions
+
+You can get `Signer` from the `SCWProvider` we created above & start using it normally as you would use an EOA.
+
+```typescript
+const scwSigner = scwProvider.getSigner();
+const greeter = new ethers.Contract(
+  GREETER_ADDR,
+  GreeterArtifact.abi,
+  scwSigner
+);
+
+const tx = await greeter.addGreet({
+  value: ethers.utils.parseEther('0.0001'),
+});
+console.log(tx);
+```
+
+### Bundling transactions
+
+You can also send multiple transactions within a single transaction using SCW. Think of approvide `ERC20` tokens & `deposit` them in a single transaction with a single signature from the users.
+
+Read more about how [here](./bundle-transactions.md).
 
 :::danger
 
