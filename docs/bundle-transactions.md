@@ -12,7 +12,7 @@ Bundling transactions opens up a plathora of possibilities. We have listed a few
 
 ## Single chain bundling
 
-You must have initialised iSDK & created a `SCWProvider`. We have exposed a function in a `SCWSigner` called `sendTransactions` using which you can send multiple transactions.
+You must have initialised SDK & created a `SCWProvider`. We have exposed a function in a `SCWSigner` called `sendTransactions` using which you can send multiple transactions.
 
 ```typescript
 const scwSigner = scwProvider.getSigner();

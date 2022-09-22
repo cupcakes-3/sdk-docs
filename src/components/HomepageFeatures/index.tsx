@@ -14,34 +14,34 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Cupcakes was designed with the aim to make it easier for developers to
+        deploy SCWs within 5 mins. Enable bundling & gasless experience easily.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: "Focus on user's Onboarding",
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Bundle transactions, enable cross-chain & sponsor user's gas fees
+        dynamically. Make your users try your DAPP in the easiest way possible.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by Typescript',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        SDK is lightweight and built over Typescript that can be used with
+        React, React-native, and Node.js
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

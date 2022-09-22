@@ -41,7 +41,7 @@ Learn more about how your stake can be slashed more in detail [here](./architect
 
 ### Register webhook
 
-You will have to register a webhook, where we will be sending the a `POST` request to verify the sponsoring of the gas.
+You will have to register a webhook, where we will be sending the `POST` request to verify the sponsoring of the gas.
 
 The requst will have the following body:
 
@@ -75,7 +75,7 @@ The requst will have the following body:
 }
 ```
 
-You must verify `auth_code` to check if the call is from our service or not. You will see the `auth_code` once you register a success webhook.
+You must verify `auth_code` to check if the call is from our service or not. You will see the `auth_code` once you register a webhook successfully.
 
 You must return with a `200` code if you agree to sponsor the transaction. If you choose not to sponsor, you must return with a `403 - Forbidden` status code response.
 
@@ -110,6 +110,6 @@ const tx = await greeter.addGreet({
 });
 console.log(tx);
 
-/* Disconnect if you don't want to sponsor amny further */
+/* Disconnect if you don't want to sponsor any further */
 scwProvider.disconnectPaymaster();
 ```

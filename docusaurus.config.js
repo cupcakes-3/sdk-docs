@@ -37,8 +37,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/cupcakes-3/sdk-docs/blob/main/',
         },
         blog: {
           showReadingTime: true,
@@ -76,7 +75,7 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/cupcakes-3/sdk-docs',
             label: 'GitHub',
             position: 'right',
           },
