@@ -76,7 +76,7 @@ Read more about how [here](./bundle-transactions.md).
 
 :::danger
 
-The transactions sent using ethers/web3/etc won't be by default bundled or sponsored. Use `sendTransactions` instead to bundle transactions, see [Bundle Transactions](./bundle-transactions.md). If you want to sponer, make sure you connect a `paymaster`, see [Gassless Experience](./gassless-experience.md)
+The transactions sent using ethers/web3/etc won't be by default bundled or sponsored. Use `sendTransactions` instead to bundle transactions, see [Bundle Transactions](./bundle-transactions.md). If you want to sponser, make sure you connect a `paymaster`, see [Gassless Experience](./gassless-experience.md)
 
 :::
 
