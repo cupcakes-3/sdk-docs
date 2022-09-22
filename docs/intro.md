@@ -6,13 +6,6 @@ sidebar_position: 1
 
 Cupcakes allow DAPPs developers access to Smart Contract Wallets. These wallets can be DAPPs specific or User specific. You must read about [Wallets section](./wallets.md) before using the SDK.
 
-:::caution
-
-**This SDK is a work in progress**,
-in the meantime, feel free the to read the docs and give us your feedback on [Telegram](https://t.me/cupcakesFeedback)! 💬
-
-:::
-
 ## Getting Started
 
 A guide for adding a Cupcakes SDK to your application & start bundling transactions. There are two parts of the documentation, [**bundling transaction**](./bundle-transactions.md) and [**sponsoring gas**](./gassless-experience/).
@@ -30,7 +23,8 @@ Our SDK is currently under development, we will be hosting it on NPM soon. The C
 
 :::caution
 
-`PackageName` is still TBD and will be added here on release.
+**This SDK is not meant for mainnet right now**,
+in the meantime, feel free the to try it on the `goerli` testnet and give us your feedback on [Telegram](https://t.me/cupcakesFeedback)! 💬
 
 :::
 

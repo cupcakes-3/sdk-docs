@@ -20,6 +20,11 @@ Install our SDK using instructions [here](/docs/intro#installing-sdk).
 
 Create a Smart Contract Wallet for a user. You MUST pass a signer while creating the SCW. The signer will have the custody of the SCW.
 
+:::caution
+
+Works only on **Goerli Testnet!**, We will be releasing our next version supporting multiple chains soon.
+:::
+
 ```typescript
 import { Signer } from 'ethers';
 import { SCWProvider } from '@cupcakes-sdk/scw';
