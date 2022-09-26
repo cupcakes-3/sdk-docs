@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        SDK is lightweight and built over Typescript that can be used with
+        SDK is lightweight () and built over Typescript that can be used with
         React, React-native, and Node.js
       </>
     ),

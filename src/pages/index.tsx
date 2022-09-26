@@ -14,13 +14,28 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <div style={{display: "flex", justifyContent: "center"}}>
+        <div className={styles.buttons} style={{marginRight: 30}}>
           <Link
-            className="button button--secondary button--lg"
+          style={{
+            border: "2px solid white",
+            background: "transparent"
+          }}
+            className="button button--info button--lg"
             to="/docs/intro"
           >
             Quickstart SDK - 5min ⏱️
           </Link>
+        </div>
+        <div className={styles.buttons}>
+          <Link
+            target="_black"
+            className="button button--secondary button--lg"
+            to="https://calendly.com/mohit-proton"
+          >
+            Book a demo 📷️
+          </Link>
+        </div>
         </div>
       </div>
     </header>
